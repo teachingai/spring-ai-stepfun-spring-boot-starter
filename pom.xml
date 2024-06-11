@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.0</version>
+		<version>3.3.0</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
@@ -371,20 +371,20 @@
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
 		<maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
 		<java.version>17</java.version>
-		<spring-ai.version>0.8.1</spring-ai.version>
+		<spring-ai.version>1.0.3</spring-ai.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-spring-boot-autoconfigure -->
+			<!-- https://mvnrepository.com/artifact/io.springboot.ai/spring-ai-spring-boot-autoconfigure -->
 			<dependency>
-				<groupId>org.springframework.ai</groupId>
+				<groupId>io.springboot.ai</groupId>
 				<artifactId>spring-ai-spring-boot-autoconfigure</artifactId>
 				<version>${spring-ai.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-retry -->
+			<!-- https://mvnrepository.com/artifact/io.springboot.ai/spring-ai-retry -->
 			<dependency>
-				<groupId>org.springframework.ai</groupId>
+				<groupId>io.springboot.ai</groupId>
 				<artifactId>spring-ai-retry</artifactId>
 				<version>${spring-ai.version}</version>
 			</dependency>
@@ -429,11 +429,11 @@
 
 		<!-- For Spring AI -->
 		<dependency>
-			<groupId>org.springframework.ai</groupId>
+			<groupId>io.springboot.ai</groupId>
 			<artifactId>spring-ai-spring-boot-autoconfigure</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.ai</groupId>
+			<groupId>io.springboot.ai</groupId>
 			<artifactId>spring-ai-retry</artifactId>
 		</dependency>
 
